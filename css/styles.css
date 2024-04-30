@@ -6,15 +6,15 @@ body {
 
 #maze {
   margin: 20px auto;
-  width: 740px;
-  height: 740px;
+  width: 800px; /* Adjusted maze width */
+  height: 760px; /* Adjusted maze height */
   border: 2px solid black;
   position: relative;
 }
 
 .wall, #start, #end {
-  width: 20px;
-  height: 20px;
+  width: 40px; /* Adjusted wall size */
+  height: 40px; /* Adjusted wall size */
   background-image: url(../images/hay.png);
   background-size: cover;
   position: absolute;
@@ -22,20 +22,21 @@ body {
 
 #start {
   background-color: green;
-  top: 20px;
-  left: 20px;
+  top: 40px; /* Adjusted start position */
+  left: 40px; /* Adjusted start position */
 }
 
 #end {
   background-color: red;
-  top: 380px;
-  left: 380px;
+  top: 720px; /* Adjusted end position */
+  left: 760px; /* Adjusted end position */
 }
 
 .player {
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/nyan.png);
-  background-size: cover;
+  width: 40px; /* Adjusted player size */
+  height: 40px; /* Adjusted player size */
+  background-image: url(../images/bunny.png);
+  background-size: 80px 80px;
+  background-position: 50%;
   position: absolute;
 }/*# sourceMappingURL=styles.css.map */
