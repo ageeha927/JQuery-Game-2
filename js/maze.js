@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Maze Size/Dimensions
-    var mazeHeight = 800; // Adjusted maze height
+    var mazeHeight = 760; // Adjusted maze height
     var mazeWidth = 800; // Adjusted maze width
 
     // Player starting position
@@ -23,7 +23,7 @@ $(document).ready(function() {
             }
 
             // Check to see if the player reaches the end
-            if (playerX === 760 && playerY === 760) {
+            if (playerX === 70 && playerY === 720) { // Adjusted end position
                 alert("Congratulations you made it through the maze");
             }
         }
@@ -49,10 +49,64 @@ $(document).ready(function() {
 
     // Create Maze Walls
     var wallCoordinates = [
-        { top: 80, left: 80 }, // wall 1
-        { top: 40, left: 200 }, // wall 2
-        { top: 40, left: 320 },
-        // Add more walls here and in the scss
+        { top: 80, left: 80 },
+        { top: 80, left: 120 },
+        { top: 120, left: 120 },
+        { top: 120, left: 160 },
+        { top: 80, left: 200 },
+        { top: 120, left: 200 },
+        { top: 160, left: 200 },
+        { top: 160, left: 240 },
+        { top: 200, left: 240 },
+        { top: 240, left: 240 },
+        { top: 240, left: 280 },
+        { top: 280, left: 280 },
+        { top: 280, left: 320 },
+        { top: 280, left: 360 },
+        { top: 320, left: 360 },
+        { top: 360, left: 360 },
+        { top: 360, left: 320 },
+        { top: 360, left: 280 },
+        { top: 400, left: 280 },
+        { top: 400, left: 320 },
+        { top: 400, left: 360 },
+        { top: 440, left: 360 },
+        { top: 480, left: 360 },
+        { top: 480, left: 400 },
+        { top: 480, left: 440 },
+        { top: 440, left: 440 },
+        { top: 480, left: 480 },
+        { top: 480, left: 520 },
+        { top: 520, left: 520 },
+        { top: 560, left: 520 },
+        { top: 600, left: 520 },
+        { top: 640, left: 520 },
+        { top: 640, left: 560 },
+        { top: 640, left: 600 },
+        { top: 600, left: 600 },
+        { top: 600, left: 640 },
+        { top: 600, left: 680 },
+        { top: 560, left: 680 },
+        { top: 520, left: 680 },
+        { top: 520, left: 720 },
+        { top: 560, left: 720 },
+        { top: 600, left: 720 },
+        { top: 640, left: 720 },
+        { top: 680, left: 720 },
+        { top: 680, left: 680 },
+        { top: 640, left: 680 },
+        { top: 640, left: 640 },
+        { top: 680, left: 640 },
+        { top: 680, left: 600 },
+        { top: 640, left: 600 },
+        { top: 600, left: 560 },
+        { top: 640, left: 560 },
+        { top: 680, left: 560 },
+        { top: 720, left: 560 },
+        { top: 720, left: 600 },
+        { top: 720, left: 640 },
+        { top: 720, left: 680 },
+        { top: 720, left: 720 }
     ];
 
     for (var i = 0; i < wallCoordinates.length; i++) {
