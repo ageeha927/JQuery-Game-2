@@ -1,0 +1,44 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  background-image: url(../images/level2.png);
+}
+
+#timer {
+  color: white;
+}
+
+#maze {
+  margin: 20px auto;
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+.wall, #start, #end {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/wall.png);
+  background-size: cover;
+  position: absolute;
+}
+
+#start {
+  background-image: url(../images/basket.png);
+  top: 720px;
+  left: 720px;
+}
+
+#end {
+  background-image: url(../images/basket.png);
+  top: 360px;
+  left: 680px;
+}
+
+.player {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/right.png);
+  background-size: 40px 40px;
+  position: absolute;
+}/*# sourceMappingURL=level2.css.map */
